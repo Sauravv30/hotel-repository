@@ -18,11 +18,23 @@ import org.springframework.web.bind.annotation.RestController;
 public class HotelController implements HotelApi {
     private HotelService hotelService;
 
+    /**
+     * Gets hotel by id.
+     *
+     * @param hotelId the hotel id
+     * @return the hotel by id
+     */
     @Override
     public ResponseEntity<Hotel> getHotelById(Long hotelId) {
         return new ResponseEntity<>(hotelService.getHotelById(hotelId),HttpStatus.OK);
     }
 
+    /**
+     * Create hotel response entity.
+     *
+     * @param hotel the hotel
+     * @return the response entity
+     */
     @Override
     public ResponseEntity<Hotel> createHotel(Hotel hotel) {
         return new ResponseEntity<>(hotelService.addHotel(hotel),HttpStatus.CREATED);
