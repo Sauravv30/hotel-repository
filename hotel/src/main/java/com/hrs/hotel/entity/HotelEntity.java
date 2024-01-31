@@ -24,6 +24,6 @@ public class HotelEntity {
     @NotNull
     private String location;
 
-    @OneToMany(mappedBy="hotel", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy="hotel", fetch = FetchType.LAZY)
     private List<RoomEntity> rooms;
 }
