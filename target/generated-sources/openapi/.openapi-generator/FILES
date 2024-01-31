@@ -1,9 +1,0 @@
-.openapi-generator-ignore
-README.md
-pom.xml
-src/main/java/com/hrs/hotel/api/ApiUtil.java
-src/main/java/com/hrs/hotel/api/HotelApi.java
-src/main/java/com/hrs/hotel/api/RoomApi.java
-src/main/java/com/hrs/hotel/model/Error.java
-src/main/java/com/hrs/hotel/model/Hotel.java
-src/main/java/com/hrs/hotel/model/Room.java
